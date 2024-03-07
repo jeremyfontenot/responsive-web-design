@@ -1,0 +1,200 @@
+/* Main body and font settings */
+body {
+    font-family: Arial, sans-serif;
+    color: white; /* White text color for better contrast */
+    background-color: #06052F; /* Dark navy background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+#main-header {
+    background-color: #30106C; /* Darker purple for the header background */
+    color: #3FE7E0; /* Cyan for text */
+    padding: 20px;
+    text-align: center;
+}
+
+#main-header .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Glowing text effect */
+.glowing-text {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:
+    0 0 20px #fff, 0 0 10px #fff, 0 0 25px #001DF9, 0 0 50px #001DF9, 0 0 40px #001DF9, 0 0 50px #F950BB, 0 0 50px #001DF9;    
+}
+
+/* Navbar styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #30106C;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navbar a {
+    color: #3FE7E0;
+    text-decoration: none;
+    padding: 0 15px;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#navbar a:hover {
+    color: white;
+}
+
+h2 {
+    color: #3FE7E0;
+}
+
+/* Section adjustments for better visibility and layout */
+
+section {
+    padding: 20px;
+    color: white;
+    background-color: #30106C; /* Darker purple background for sections */
+}
+
+.company-date {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#work-experience ul li,
+#skills ul li,
+#certifications ul li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Adds a subtle divider */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.skills-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-column {
+        padding: 0;
+    }
+
+    #navbar {
+        justify-content: center;
+    }
+
+    #navbar a {
+        flex-grow: 0;
+        padding: 10px;
+    }
+}
+
+#certifications .badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between badges */
+}
+
+#certifications div[data-iframe-width] {
+    /* Styles specifically for the badge containers */
+}
+
+.digital-badges img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* This keeps the aspect ratio intact */
+    display: block; /* This changes the display type */
+    margin: 10px auto; /* This adds some space around the badges and centers them */
+}
+
+.digital-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the badges horizontally */
+    align-items: center; /* Aligns the badges vertically */
+}
+
+.digital-badges img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px; /* Adds some space around each badge */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Education Section */
+#education {
+    padding: 20px;
+    color: white;
+    background-color: #30106C; /* Darker purple background for sections */
+}
+
+#education ul {
+    padding-left: 0;
+}
+
+#education ul li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Adds a subtle divider */
+}
+
+#education ul li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #06052F;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Resume Download Button */
+.resume-download {
+    background-color: #3746D5; /* Blue for the button */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block; /* Allows the button to be inline but also apply padding and margin */
+}
+
+.resume-download:hover {
+    background-color: white;
+    color: #30106C;
+}

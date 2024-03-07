@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charsert="utf-8"
+	<link rel="stylesheet" href="styles.css">
+	<title>Help Desk Survy Form</title>
+</head>
+	<body>
+		<h1 id="title">Help Desk Survey Form</h1>
+			<p id="description">
+			Help desk ticketing handling
+			</p>
+			<form id="survey-form">
+				<fieldset>
+			<label for="Name" id="name-label">Enter your name <input type="text" id="name" name="Name-label" required placeholder="enter your full name" autocomplete="off" />
+			</label>
+			<label for="Email" id="email-label">Enter your email: <input id="email" name="Email-label" type="email" required placeholder="enter your email" />
+			</label>
+			<label for="Number" id="number-label">Rate your service <input id="number" type="number" name="Number-label" min="1" max="5" placeholder="number" />
+			</label>
+			</fieldset>
+			<fieldset>
+			<label for="dropdown" name="ticket-type">How was your issue reported
+			<select id="dropdown" name="Ticket-type">
+				<option value=""(select one)</option>
+				<option value="1">Email</option>
+				<option value="2">Phone</option>
+				<option value="3">Chat</option>
+				<option value="4">Ticket</option>
+				</select>
+				</label>
+				<legend>Ticket status</legend>
+				<label for="resolved"><input id="resolved" type="radio" value="resolved" name="ticket-status" class="inline" checked /> Resolved
+				</label>
+				<label for="not-resolved"><input id="not-resolved" type="radio" name="ticket-status" value="not-resolved" class="inline" />Not Resolved
+				</label>
+				<legend>Choose your operating system</legend>
+				<input type="checkbox" id="windows" name="operating-system" value="windows" checked />
+				<label for="windows">Windows</label>
+				<input type="checkbox" id="macos" name="operating-system" value="macos" />
+				<label for="macos">MacOS</label>
+				<input type="checkbox" id="linux" name="operating-system" value="linux" />
+				<label for="linux">Linux</label>
+				</fieldset>
+				<label for="additional-comments">Additional comments:
+					<textarea id="additional-comments" name="additional-comments" rows="3" cols="30" placeholder="Add any additional comments ..."></textarea>
+					</label>
+					<input type="submit" value="submit" id="submit" />

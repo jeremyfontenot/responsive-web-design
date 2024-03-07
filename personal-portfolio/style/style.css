@@ -1,0 +1,132 @@
+:root {
+    /* Color scheme remains unchanged */
+    --background-color: #190243;
+    --header-background-color: #2A0B55;
+    --section-background-color: #221B4B;
+    --footer-background-color: #160032;
+    --text-color: #EDEDED;
+    --secondary-text-color: #B3B3B3;
+    --accent-color: #D6A2E8;
+    --link-color: #FFFFFF;
+    --hover-bg-color: rgba(255,255,255,0.2);
+
+    /* Font stack remains the same */
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Box shadow remains the same */
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body {
+    font-family: var(--font-stack);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6; /* Improved readability */
+}
+
+header, nav, section, footer {
+    max-width: 1200px; /* Max width for content areas */
+    margin: auto; /* Center content areas */
+    width: 90%; /* Responsive width */
+}
+
+header {
+    background-color: var(--header-background-color);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--link-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px; /* Added spacing below the image */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Added spacing */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjusted margin for better spacing */
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: var(--hover-bg-color);
+}
+
+section {
+    background-color: var(--section-background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    margin-bottom: 30px; /* Ensures consistent spacing */
+    padding: 20px; /* Adjusted padding for consistency */
+    text-align: center;
+}
+
+.glowing-text {
+    font-size: 2.5rem;
+    color: var(--link-color);
+    text-shadow: 
+        0 0 8px #fff, /* Innermost white glow, slightly reduced for legibility */
+        0 0 10px #fff, /* White glow */
+        0 0 20px #001DF9, /* Primary glow color */
+        0 0 30px #001DF9, /* Slightly increased primary glow */
+        0 0 40px #001DF9, /* Further increased primary glow */
+        0 0 50px #F950BB, /* Accent glow color, enhanced for visibility */
+        0 0 60px #F950BB, /* Further enhanced accent glow for more pronounced effect */
+        0 0 70px #001DF9; /* Maximized primary glow for intensity */
+}
+
+#certifications ul, #skills ul, #education .education-entry {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+#certifications li::before, .education-entry::before {
+    content: "✔️";
+    margin-right: 5px;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--secondary-text-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #2C1A4B;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing for mobile */
+    }
+
+    header, nav, section, footer {
+        width: 95%; /* Slightly wider on smaller screens */
+    }
+}

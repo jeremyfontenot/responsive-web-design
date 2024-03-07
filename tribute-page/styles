@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#img-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#image {
+    max-width: 50%; /* Adjust this value as needed */
+    max-height: auto; /* This keeps the aspect ratio intact */
+    height: auto; /* Ensures the height scales with the width */
+    display: block; /* Centers the image in its container */
+    margin: 0 auto; /* This centers the image horizontally */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+}
+
+
+#tribute-info ul {
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#tribute-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#tribute-link:hover,
+#tribute-link:focus {
+    text-decoration: underline;
+}
